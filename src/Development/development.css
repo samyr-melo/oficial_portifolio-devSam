@@ -1,0 +1,113 @@
+.development {
+  display: flex;
+  padding: 20% 5%; /* Alterado para porcentagem relativa */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px; /* Reduzido para telas menores */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.general__development {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px; /* Limite máximo para telas grandes */
+  align-items: center;
+  gap:40px;
+}
+
+.general__links__development {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Permite que os links quebrem linha em telas pequenas */
+  justify-content: center;
+}
+
+.links__development_one,
+.links__development_two {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Evita quebra de texto */
+}
+
+.links__development_one {
+  background-color: #00ADB5;
+}
+
+.links__development_two {
+  background-color: #2F3832;
+  padding: 10px 25px; /* Padronizado com o outro botão */
+}
+
+.development__title {
+  font-size: clamp(2.5rem, 8vw, 75px); /* Tamanho responsivo */
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.development__subtitle {
+  font-size: clamp(1.5rem, 8vw, 5px) ;
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Media Queries para ajustes específicos */
+@media (max-width: 1024px) {
+  .development {
+    padding: 15% 5%;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .development {
+    padding: 20% 5%;
+    gap: 30px;
+  }
+  
+  .general__links__development {
+    gap: 15px;
+  }
+  
+  .links__development_one,
+  .links__development_two {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .development {
+    padding: 25% 5%;
+    gap: 25px;
+  }
+  
+  .development__title {
+    font-size: 2rem;
+  }
+
+  .development__subtitle {
+    font-size: 1rem;
+  }
+  
+  .general__links__development {
+    flex-direction: column; /* Botões em coluna em telas muito pequenas */
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .links__development_one,
+  .links__development_two {
+    width: 100%;
+    padding: 10px;
+  }
+}

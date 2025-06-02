@@ -1,0 +1,147 @@
+/* Estilos base */
+.contact__container {
+    max-width: 600px;
+    margin: 10rem auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    text-align: center;
+}
+
+.contact__title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form__label {
+    font-weight: 600;
+    color: #34495e;
+    font-size: 1rem;
+}
+
+.form__input, .form__textarea {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.form__input::placeholder, .form__textarea::placeholder {
+    color: #95a5a6;
+}
+
+.form__input:focus, .form__textarea:focus {
+    outline: none;
+    border-color: #00ADB5;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.form__textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #00ADB5;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.form__button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.button__icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.form__button:hover .button__icon {
+    transform: translateX(3px);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .contact__container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .contact__title {
+        font-size: 1.5rem;
+    }
+    
+    .form__input, .form__textarea {
+        padding: 0.7rem 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact__container {
+        padding: 1rem;
+        margin: 0.5rem;
+        border-radius: 8px;
+    }
+    
+    .contact__title {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact__form {
+        gap: 1rem;
+    }
+    
+    .form__label {
+        font-size: 0.9rem;
+    }
+    
+    .form__input, .form__textarea {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.8rem;
+    }
+    
+    .form__button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .form__button {
+        width: 100%;
+    }
+}

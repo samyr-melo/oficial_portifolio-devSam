@@ -1,0 +1,25 @@
+import './development.css';
+import Group2345 from '../assets/Group2345.png';
+import Doodles from '../assets/doodles.png';
+import Devsam from'../assets/chatdevsam.png'
+
+function Development () {
+    return(
+        <div className='development'>
+            <div className='general__development'>
+                <h1 className='development__title'>DESENVOLVEDOR <span>WEB</span></h1>
+                <h4 className='development__subtitle'>Desenvolvo arquiteturas web robustas (React, Node.js, APIs RESTful) com UX estratégico, performance otimizada e funcionalidades escaláveis, transformando objetivos de negócio em resultados mensuráveis.</h4>
+                <div className='general__links__development'>
+                    <a className='links__development_one' href="#">Hire me</a>
+                    <a className='links__development_two' href="#">Dowload CV</a>
+                </div>
+
+            </div>
+            <div className='container'>
+               {/* <img className='imagem__dev' src={Devsam} alt="" /> */}
+            </div>
+        </div>
+    )
+}
+
+export default Development;
