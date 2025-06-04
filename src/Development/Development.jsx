@@ -16,7 +16,7 @@ function Development () {
 
             </div>
             <div className='container'>
-               {/* <img className='imagem__dev' src={Devsam} alt="" /> */}
+               
             </div>
         </div>
     )

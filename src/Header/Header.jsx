@@ -13,7 +13,7 @@ function Header() {
         block: 'start'
       });
     }
-    setMenuOpen(false); // Fecha o menu após clicar em um link
+    setMenuOpen(false); 
   };
 
   return (

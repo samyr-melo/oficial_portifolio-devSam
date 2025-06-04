@@ -1,47 +1,3 @@
-// import "../Works/works.css";
-// import Connect from '../assets/conect.png'
-// import Randall from '../assets/randall.png'
-// import Sanchina from '../assets/sanchina.png'
-// import Todolist from '../assets/todolist.png'
-
-// function scroll (offset) {
-//   const container = document.getElementById('scroll')
-//   container.scrollBy({left: offset, behavior: 'smooth'})
-// }
-
-
-// function Works() {
-//   return (
-//     <div className="works">
-//       <div>
-//         <h1 className="work__title">
-//           My recents <span>works</span>
-//         </h1>
-//       </div>
-//       <div className="work__button">
-
-//         <a className="link__work" href="">All</a>       
-//         <a className="link__work" href="">React</a>
-//         <a className="link__work" href="">Javascript</a>
-//         <a className="link__work" href="">HTML&CSS</a>
-
-//       </div>
-//       <div className="work__projeto__images">
-//         <button id="scroll" type="button" onClick={scroll(250)}>←</button>
-//         <div className="work__div__images">
-//           <a href=""><img className="work__projeto__img" src={Connect} alt="projeto página de acesso codeconnect" /></a>
-//           <a href=""><img className="work__projeto__img" src={Randall} alt="projeto Cartão de Visita Jessica Randall " /></a>
-//           <a href=""><img className="work__projeto__img" src={Sanchina} alt="projeto portifolio React Sanchina" /></a>
-//           <a href=""><img className="work__projeto__img" src={Todolist} alt="projeto to-do-list" /></a>
-//         </div>
-//         <button id="scroll" type="button" onClick={scroll(250)}>→</button>
-       
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Works;
 import React, { useRef, useState } from 'react';
 import "../Works/works.css";
 import Connect from '../assets/conect.png';
@@ -49,7 +5,6 @@ import Randall from '../assets/randall.png';
 import Sanchina from '../assets/sanchina.png';
 import Todolist from '../assets/todolist.png';
 
-// Dados dos projetos com categorias
 const projects = [
   { 
     id: 1, 
@@ -98,7 +53,7 @@ function Works() {
     }
   };
 
-  // Filtra os projetos baseado na categoria selecionada
+
   const filteredProjects = activeFilter === 'All' 
     ? projects 
     : projects.filter(project => 
@@ -120,7 +75,7 @@ function Works() {
             className={`filter-button ${activeFilter === filter ? 'active' : ''}`}
             onClick={() => {
               setActiveFilter(filter);
-              // Resetar scroll quando mudar o filtro
+             
               if (scrollContainerRef.current) {
                 scrollContainerRef.current.scrollLeft = 0;
               }
@@ -151,8 +106,8 @@ function Works() {
             alt={project.alt}
             style={{
               width: '400px',
-              height: 'auto', // Mantém a proporção
-              aspectRatio: '16/9' // Opcional: define proporção específica
+              height: 'auto', 
+              aspectRatio: '16/9' 
             }}
                   />
                   <div className="project-overlay">
