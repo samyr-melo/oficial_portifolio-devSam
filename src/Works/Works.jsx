@@ -8,35 +8,39 @@ import Todolist from '../assets/todolist.png';
 const projects = [
   { 
     id: 1, 
-    image: Connect, 
-    alt: "projeto página de acesso codeconnect",
-    title: "CodeConnect",
-    description: "Plataforma de conexão para desenvolvedores",
-    categories: ['React', 'Javascript']
-  },
-  { 
-    id: 2, 
-    image: Randall, 
-    alt: "projeto Cartão de Visita Jessica Randall",
-    title: "Jessica Randall",
-    description: "Cartão de visita digital",
-    categories: ['HTML&CSS']
-  },
-  { 
-    id: 3, 
-    image: Sanchina, 
-    alt: "projeto portifolio React Sanchina",
-    title: "Sanchina Portfolio",
-    description: "Portfólio profissional",
-    categories: ['React']
-  },
-  { 
-    id: 4, 
     image: Todolist, 
     alt: "projeto to-do-list",
     title: "Task Manager",
     description: "Aplicativo de gerenciamento de tarefas",
-    categories: ['Javascript']
+    categories: ['Javascript'],
+    link: "https://samyr-melo.github.io/To-do-list-js-puro-/"
+    },
+    {
+    id: 2, 
+    image: Connect, 
+    alt: "projeto página de acesso codeconnect",
+    title: "CodeConnect",
+    description: "Plataforma de conexão para desenvolvedores",
+    categories: ['React', 'Javascript'],
+    link: "https://samyr-melo.github.io/pagina-de-acesso-com-react/"
+  },
+  { 
+    id: 3, 
+    image: Randall, 
+    alt: "projeto Cartão de Visita Jessica Randall",
+    title: "Jessica Randall",
+    description: "Cartão de visita digital",
+    categories: ['HTML&CSS'],
+    link:"https://samyr-melo.github.io/Front-End-mentor-3/"
+  },
+  { 
+    id: 4, 
+    image: Sanchina, 
+    alt: "projeto portifolio React Sanchina",
+    title: "Sanchina Portfolio",
+    description: "Portfólio profissional",
+    categories: ['React'],
+    link: "https://samyr-melo.github.io/page_react_vite/"
   },
 ];
 
@@ -99,7 +103,7 @@ function Works() {
   {filteredProjects.length > 0 ? (
     filteredProjects.map((project) => (
       <div key={project.id} className="project-card">
-        <a href="#">
+        <a href={project.link}  target="_blank" rel="noopener noreferrer">
           <img 
             className="work__projeto__img" 
             src={project.image} 
