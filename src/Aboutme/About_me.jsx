@@ -13,7 +13,7 @@ function About() {
             Graduando em Análise e Desenvolvimento de Sistemas, com uma base sólida em desenvolvimento web 
 e uma paixão por JavaScript, React e Node.js, estou sempre em busca de novos desafios e 
 oportunidades para aprimorar minhas habilidades, atualmente estou me especializando nos Hooks mais utilizados do React, como useState, Router, entre outros. 
-Minha experiência no back-end abrange consumo de API's utilizando Express.js, permitindo-me contribuir em diversas etapas do ciclo de desenvolvimento de software. 
+Minha experiência no back-end abrange consumo de API's utilizando Express.js, Modelagem de Dados, permitindo-me contribuir em diversas etapas do ciclo de desenvolvimento de software. 
 Sou proativo, estou sempre disposto a aprender e me adaptar a novas tecnologias e metodologias. Atualmente estou desenvolvendo habilidades em Banco de Dados, SQL.
 Acredito que a colaboração e o trabalho em equipe são fundamentais para o sucesso de qualquer 
 projeto, e me dedico a construir relacionamentos profissionais positivos e produtivos.
